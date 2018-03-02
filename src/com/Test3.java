@@ -5,9 +5,10 @@ import static org.bytedeco.javacpp.lept.*;
 import static org.bytedeco.javacpp.tesseract.*;
 
 public class Test3 {
-    public static void main(String[] args) {
-        BytePointer outText;
 
+    public static void main (String[] args) {
+        
+    	BytePointer outText;
         TessBaseAPI api = new TessBaseAPI();
         // Initialize tesseract-ocr with English, without specifying tessdata path
         if (api.Init(null, "eng") != 0) {
@@ -27,4 +28,5 @@ public class Test3 {
         outText.deallocate();
         pixDestroy(image);
     }
+    
 }
