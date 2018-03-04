@@ -1,22 +1,25 @@
 package com;
 
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.*;
 import org.sikuli.script.FindFailed;
 import org.sikuli.script.Pattern;
 import org.sikuli.script.Screen;
+import org.sikuli.script.ScreenImage;
 import org.testng.annotations.Test;
 import org.sikuli.*;
 import com.Test3;
+import main.Base; 
 
-@Test
-public class Test4 {
-
+public class Test4 extends Base{
+	
+	@Test
 	public void facebookLogin() throws FindFailed{
-		
+
 		// Settings.OcrTextRead = true; // to switch on the Region.text() function
-		 //Settings.OcrTextSearch = true; // to switch on finding text with find("some text")
+		//Settings.OcrTextSearch = true; // to switch on finding text with find("some text")
 
 		// Creating Object of 'Screen' class
 		//Screen is a base class provided by Sikuli. It allows us to access all the methods provided by Sikuli.
@@ -46,14 +49,22 @@ public class Test4 {
 		screen.type(password, "softwaretestingmaterial");
 		// This will click on login button
 		screen.click(login);
+
+		//ScreenImage file = screen.capture(screen.getBounds());
+		//Print("Saved screen as "+file);
+		//System.out.println(file);
+
+		
+		Base.screenshot();
 		
 		driver.close();
 
+		/*
 		String text = screen.find("C:\\tc\\dev\\objects\\Login.png").text();
 		String Finaltext = text.trim();
-		System.out.println(Finaltext);
-		
-	
+		System.out.println(Finaltext);  */
+
+ 
 
 	}
 
