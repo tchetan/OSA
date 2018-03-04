@@ -11,8 +11,8 @@ import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
-public class Base {
-	
+public class BasePage {
+
 	public static WebDriver driver;
 
 	public static WebDriver OpenApp(String BrowserName, String url){
@@ -47,27 +47,14 @@ public class Base {
 		File screenshot = ((TakesScreenshot)driver).
 				getScreenshotAs(OutputType.FILE);
 		//Copy the file to system ScreenshotPath
-		String ScreenshotPath = "C:\\tc\\dev\\screenshots\\Test4.png";
+		String ScreenshotPath = "C:\\tc\\dev\\screenshots\\Test5.png";
 		try {
 			FileUtils.copyFile(screenshot, new File(ScreenshotPath));
+			System.out.println("printed :  " + screenshot);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	}
-
-	public void baseURL(String URL) {
-		String URL1 = "https://en-gb.facebook.com/";
-	}
-
-	public void NewDriver() {
-
-	}
-
-	public static void OpenBrowser() {
-		String url = null;
-		driver.get(url);
-		driver.manage().window().maximize();
 	}
 
 	public static void CloseBrowser() {

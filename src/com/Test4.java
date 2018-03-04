@@ -11,9 +11,9 @@ import org.sikuli.script.ScreenImage;
 import org.testng.annotations.Test;
 import org.sikuli.*;
 import com.Test3;
-import main.Base; 
+import main.BasePage; 
 
-public class Test4 extends Base{
+public class Test4 extends BasePage{
 	
 	@Test
 	public void facebookLogin() throws FindFailed{
@@ -55,7 +55,7 @@ public class Test4 extends Base{
 		//System.out.println(file);
 
 		
-		Base.screenshot();
+		BasePage.screenshot();
 		
 		driver.close();
 
