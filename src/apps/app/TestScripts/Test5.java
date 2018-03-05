@@ -1,5 +1,5 @@
 
-package com;
+package apps.app.TestScripts;
 
 public class Test5{
 	  public String getPersonalLoan(){

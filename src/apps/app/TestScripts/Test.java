@@ -1,4 +1,4 @@
-package com;
+package apps.app.TestScripts;
 import java.io.File;
 import net.sourceforge.tess4j.*;
 

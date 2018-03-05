@@ -1,4 +1,4 @@
-package com;
+package apps.app.TestScripts;
 
 import org.bytedeco.javacpp.*;
 import static org.bytedeco.javacpp.lept.*;

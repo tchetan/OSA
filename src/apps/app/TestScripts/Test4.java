@@ -1,7 +1,10 @@
-package com;
+package apps.app.TestScripts;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import apps.app.TestScripts.Test3;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.*;
 import org.sikuli.script.FindFailed;
@@ -10,8 +13,8 @@ import org.sikuli.script.Screen;
 import org.sikuli.script.ScreenImage;
 import org.testng.annotations.Test;
 import org.sikuli.*;
-import com.Test3;
-import main.BasePage; 
+
+import main.base.BasePage; 
 
 public class Test4 extends BasePage{
 	
