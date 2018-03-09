@@ -15,6 +15,7 @@ import org.testng.annotations.Test;
 import org.sikuli.*;
 
 import main.base.BasePage; 
+import apps.app.PageObjects.*;
 
 public class Test6 extends BasePage{
 
@@ -32,6 +33,8 @@ public class Test6 extends BasePage{
 		screen.type(username, "softwaretestingmaterial@gmail.com");
 		screen.type(password, "softwaretestingmaterial");
 		screen.click(login);
+		
+		
 		BasePage.screenshot();
 		BasePage.CloseBrowser();
 	}
