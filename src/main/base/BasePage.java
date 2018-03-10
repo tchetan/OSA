@@ -61,7 +61,9 @@ public class BasePage {
 		driver.close();
 	}
 
-
+	public static void CloseBrowser1() {
+		driver.close();
+	}
 
 
 }
